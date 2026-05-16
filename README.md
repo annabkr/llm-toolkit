@@ -2,6 +2,12 @@
 
 A collection of reusable Claude Code skills and prompts for common development workflows.
 
+## Motivation
+
+This library reflects explorations with high and low levels of delegation. 
+
+One thing is certain: first pass LLM output is almost always unsatisfactory. Iteration helps, but it's not a magic wand or a replacement for critical thinking.
+
 ## Skills
 
 ### PR review (at a glance)
