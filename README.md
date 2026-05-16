@@ -1,6 +1,6 @@
 # LLM Toolkit
 
-A collection of reusable Claude Code skills and prompts for common development workflows: PR review, Python expertise, and CI automation.
+A collection of reusable Claude Code skills and prompts for common development workflows.
 
 ## Skills
 
@@ -94,7 +94,7 @@ Each skill is self-contained with:
 ## Principles
 
 ### Code Review
-- **Block only on things that degrade code health.** Approve when the PR improves the system, even if imperfect.
+- **Be firm on principles, flexible on implementation.** Require that a problem be solved while giving the author latitude in how to solve it.
 - **Be ruthlessly direct.** State what is wrong and why. Don't hedge or soften.
 - **Label every finding** using [Conventional Comments](https://conventionalcomments.org/) format.
 - **Provide concrete alternatives** when proposing changes.
@@ -105,7 +105,7 @@ Each skill is self-contained with:
 - **Explicit is better than implicit.** Write clear code over clever code.
 
 ### CI Automation
-- **Minimal fixes only** — fix exactly what CI is complaining about, don't refactor
+- **Minimal fixes only.** Fix exactly what CI is complaining about, don't refactor
 - **Understand before fixing.** Read the error and code, then act.
 - **Report what you did.** Explain the diagnosis and fix for user visibility.
 
