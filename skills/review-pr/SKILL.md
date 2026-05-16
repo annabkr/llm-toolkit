@@ -1,7 +1,8 @@
 ---
 name: review-pr
 description: >-
-  Review a pull request and produce structured, clearly labeled findings.
+  Single-pass PR review with structured, clearly labeled findings.
+  Use for a quick review or when one pass is enough.
   Use when asked to review a PR, critique a change, or give feedback on code.
 compatibility: Works on all platforms. Requires git CLI and gh CLI on PATH.
 metadata:

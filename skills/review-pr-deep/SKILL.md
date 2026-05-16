@@ -1,18 +1,21 @@
 ---
-name: review-pr
+name: review-pr-deep
 description: >-
-  Multi-lens PR review that runs parallel agents (general, security, integration),
-  checks for prior reviews, and produces structured, deduplicated findings.
-  Use when asked to review a PR, critique a change, or give feedback on code.
+  Multi-lens PR review using parallel specialist agents (general, security, integration).
+  Checks for prior reviews and produces structured, deduplicated findings.
+  Use for non-trivial PRs or when the user wants a thorough review.
+  Not for quick single-pass reviews — use review-pr instead.
 compatibility: Works on all platforms. Requires git CLI and gh CLI on PATH.
 metadata:
   author: annabkr
   version: "0.2.0"
 ---
 
-# PR Review
+# PR Review (deep)
 
 Reviews a pull request using multiple focused review agents in parallel, then merges their findings into a single structured review.
+
+To fix blocking findings and re-run until the PR is merge-ready, use `converge.md` in this directory.
 
 ---
 

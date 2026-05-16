@@ -1,16 +1,16 @@
-# review-pr loop
+# review-pr-deep converge
 
-Use this prompt to run `/review-pr` iteratively against a PR, automatically fixing blocking issues until the PR converges.
+Use this prompt to run `/review-pr-deep` iteratively against a PR, automatically fixing blocking issues until the PR converges.
 
 ## Instructions
 
-1. Run `/review-pr` on the target PR and record all `issue` and `todo` findings from the output.
+1. Run `/review-pr-deep` on the target PR and record all `issue` and `todo` findings from the output.
 2. If the verdict is **Approve** or **Approve with findings**, stop. The PR is ready.
 3. Otherwise, for each blocking (`issue` or `todo`) finding:
    - Read the relevant file(s)
    - Apply the fix directly in the code
    - Commit the fix with a clear message describing what was changed and why
-4. Once all blocking findings from the current round are fixed, re-fetch the diff and run `/review-pr` again.
+4. Once all blocking findings from the current round are fixed, re-fetch the diff and run `/review-pr-deep` again.
 5. On each subsequent round, check that all blocking findings from the **previous round** are resolved. Only raise a finding as unresolved if the underlying problem is still present — do not re-raise it if the fix addresses the problem, even imperfectly.
 6. Stop when:
    - The verdict is **Approve** or **Approve with findings**, or
